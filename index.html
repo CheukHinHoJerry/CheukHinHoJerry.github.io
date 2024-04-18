@@ -31,8 +31,8 @@
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li class="is-middle"><a href="#projects">Projects</a></li>
+								<!-- <li><a href="#work">Work</a></li> -->
+								<li><a href="#projects">Works</a></li>
 								<li><a href="#softwares">Codes</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -45,10 +45,18 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<p>Hi there! Welcome to my website. I focus working on blending traditional mathematics with machine learning, from developing machine learning library to solving problems in interatomic potentials, stability of least squared system and equilvariant/invariant parameterized models.</p>
-								<p><a href = "./attachments/CV.pdf">Cheuk out my CV!</a></p>
-								<p>Outside work I love endurance running, hiking or any outdoor activity 🏃</p>
+								<h3 class="major">Intro</h3>
+								<p>Graduate student at the University of British Columbia, working under <a href="https://personal.math.ubc.ca/~ortner/"> Prof. Christoph Ortner </a></p>
+
+								<h3 class="major">Reseach Interest</h3>
+								<p> I am boardly interested in application of machine learning in atomistic modelling, espectically in buind symmetries aware forcefields. Recently getting interested in algorithms for accelerating molecular dynamics simulations.	</p>
+
+								<h3 class="major">and other things that interest me...</h3>
+								<p>Imaging processing, Uncertainty quantification, Tensor decomposition formats, Few-shots learning</p> 
+
+
+								<h3 class="major">Entertainment </h3>
+								<p>Outside of work I love endurance running, hiking or any outdoor activity 🏃</p>
 								<span class="image main"><img src="images/pic01.jpg" alt=""/></span>
 							</article>
 
@@ -78,33 +86,48 @@
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>								
 							</article>
 
-						<!-- Projects -->
+						<!-- Publications -->
 						<article id="projects">
-							<h2 class="major">Projects</h2>
-							Publications/In preparation:
+							<h2 class="major">Publications</h2>
+							<p>Equal contribution: *</p>
+							<h3 class="major">In preparation</h3>
 							<ul>
-								<li>D. Zhou, H. Chen, <b><ins>C. Hin Ho</ins></b>, and C. Ortner. A multilevel method for many-electron schrödinger equations based on the atomic cluster expansion. ArXiv e-prints, 2304.04260, 2023.</li>
-								<li>W. Witt, C. van der Oord, E. Gelžinytė, A. Ross,  <b><ins>C. Hin Ho</ins></b>, W. Baldwin, T. Järvinen, M. Sachs, J. Kermode, N. Bernstein, G. Csanyi, and C. Ortner.  ACE1pack.jl : A Julia Implementation of the Atomic Cluster Expansion, to appear in The Journal of Chemical Physics</li>
-								<li> <b><ins>C. Hin Ho</ins></b>, T. S. Gutleb, C. Ortner.  A G-equivariant Canonical Cluster Expansion : Efficiency, Stability and Regularization, in preparation</li>
-								<li>Z. Li, <b><ins>C. Hin Ho</ins></b>, L. Lui, A Deep Learning Framework of N-dimension Landmark-intensity Registration with Quasi-Conformal Theory, in preparation</li>
+								<li>Scalable Learning Framewok for Smooth Parameterization of High Dimension Mapping with Quasi-Conformal Theory, Z. Li *, <b><ins>C. Ho *</ins></b>, L. Lui, in preparation</li>
 							</ul>
-							Some Previous Projects:
+
+							<h3 class="major">Publications/Preprints</h3>
+							<ul>
+								<li><a href="https://arxiv.org/abs/2401.01550">Atomic Cluster Expansion without Self-Interaction</a>, <b><ins>C. Ho</ins></b>, T. S. Gutleb, C. Ortner. ArXiv e-prints, 2401.01550, 2024.</li>
+								<li><a href="https://epubs.siam.org/doi/abs/10.1137/23M1565887">A Multilevel Method for Many-Electron Schrödinger Equations Based on the Atomic Cluster Expansion</a>, D. Zhou, H. Chen, <b><ins>C. Ho</ins></b>, and C. Ortner. SIAM J. Sci. Comput. 46.1 (2024) A105-A129.</li>
+								<li><a href="https://pubs.aip.org/aip/jcp/article/159/16/164101/2918010/ACEpotentials-jl-A-Julia-implementation-of-the">ACEpotential.jl : A Julia Implementation of the Atomic Cluster Expansion</a>, W. Witt, C. van der Oord, E. Gelžinytė, A. Ross,  <b><ins>C. Ho</ins></b>, W. Baldwin, T. Järvinen, M. Sachs, J. Kermode, N. Bernstein, G. Csanyi, and C. Ortner. J. Chem. Phys. 159, 164101 (2023)</li>
+							</ul>
+							<h2 class="major">Invited Talks</h2>
+							<ul>
+								<li>Lightening talk at workshop on Machine Learning Force Fields, Data-Driven Materials Informatics, Institute for Mathematical and Statistical Innovation, University of Chicago, April 4-8, 2024.</li>
+							</ul>
+
+							<h2 class="major">Organized workshops</h2>
+							<ul>
+								<li><a href="https://github.com/CheukHinHoJerry/PACMAN_ADworkshop">Automatic Differentiation workshop series</a>, PACMAN, Institute for Applied Mathematics, University of British Columbia, April , 2024. With Christoph Ortner and Miranda-Holmes</li>
+							</ul>
+
+							<h2 class="major">Gallery</h2>
 							<ul>
 								<li>
-									Super resolution with a paralled structured Convolutional Neural Network
-									<span class="image main"><img src="images/diamond_sr.gif"/></span>
+									Molecular dynamics simulation of ala-ala-ala with <a href="https://github.com/ACEsuit/mace">MACE</href>
+									<span class="image main"><img src="images/ala3.gif" alt="" /></span>
 								</li>
 								<li>
-									Molecular Dynamics Simulation of Molybdenum with Atomic Cluster Expansion
-									<span class="image main"><img src="images/sim_Mo_pure_11(1).gif" alt="" /></span>
-								</li>
-								<li>
-									Wavefunction parameterization
+									Dissociation curve of H8 with ACE parameterized wavefunction optimized with variational monte carlo
 									<span class="image main"><img src="images/WF_h8.png"/></span>
 								</li>
 								<li>
 									Landmark-intensity Regsitration with Quasi-Conformal theory on MRI images
 									<span class="image main"><img src="images/MRI_quasi.jpeg" alt="" /></span>
+								</li>
+								<li>
+									Super resolution with a paralle-structured Convolutional Neural Network
+									<span class="image main"><img src="images/diamond_sr.gif"/></span>
 								</li>
 							</ul>
 						</article>
